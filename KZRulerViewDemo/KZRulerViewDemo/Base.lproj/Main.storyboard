@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WxP-9t-T64" customClass="KZRulerView">
+                                <rect key="frame" x="0.0" y="138" width="414" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="OBk-1x-R9Q"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFZ-i5-bUl" customClass="KZRulerView">
+                                <rect key="frame" x="0.0" y="288" width="414" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="OeD-dk-7FE"/>
+                                    <constraint firstAttribute="height" constant="60" id="y6J-tD-nfg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHC-W3-NJ8" customClass="KZRulerView">
+                                <rect key="frame" x="0.0" y="438" width="414" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="ad4-9f-itg"/>
+                                    <constraint firstAttribute="height" constant="60" id="bgP-sF-WfI"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0R-YT-IA2">
+                                <rect key="frame" x="186" y="247" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQF-Pt-hyi">
+                                <rect key="frame" x="186" y="397.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WxP-9t-T64" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1E3-2E-yOk"/>
+                            <constraint firstItem="zFZ-i5-bUl" firstAttribute="top" secondItem="q0R-YT-IA2" secondAttribute="bottom" constant="20" id="45s-1d-2M3"/>
+                            <constraint firstItem="zFZ-i5-bUl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8xI-4P-cEa"/>
+                            <constraint firstItem="WxP-9t-T64" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="94" id="Rsr-iM-FIu"/>
+                            <constraint firstItem="zHC-W3-NJ8" firstAttribute="top" secondItem="zFZ-i5-bUl" secondAttribute="bottom" constant="90" id="WIE-ly-alv"/>
+                            <constraint firstItem="zHC-W3-NJ8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fCT-fL-SN0"/>
+                            <constraint firstItem="zFZ-i5-bUl" firstAttribute="top" secondItem="WxP-9t-T64" secondAttribute="bottom" constant="90" id="hWJ-kt-MgG"/>
+                            <constraint firstItem="WxP-9t-T64" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="j8p-Tv-FTI"/>
+                            <constraint firstItem="zFZ-i5-bUl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mna-HQ-6mr"/>
+                            <constraint firstItem="zHC-W3-NJ8" firstAttribute="top" secondItem="UQF-Pt-hyi" secondAttribute="bottom" constant="20" id="rmk-aM-DLU"/>
+                            <constraint firstItem="zHC-W3-NJ8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tUd-J5-Zjd"/>
+                            <constraint firstItem="q0R-YT-IA2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uP4-Nv-Yox"/>
+                            <constraint firstItem="UQF-Pt-hyi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uWI-lE-uQ2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="heightLabel" destination="q0R-YT-IA2" id="O3M-OE-cCM"/>
+                        <outlet property="heightRuler" destination="zFZ-i5-bUl" id="akK-zg-iE3"/>
+                        <outlet property="rulerView" destination="WxP-9t-T64" id="CLc-Zj-NUr"/>
+                        <outlet property="weightLabel" destination="UQF-Pt-hyi" id="lo2-WJ-JsQ"/>
+                        <outlet property="weightRuler" destination="zHC-W3-NJ8" id="aJP-6A-Dim"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="111.83035714285714"/>
+        </scene>
+    </scenes>
+</document>
